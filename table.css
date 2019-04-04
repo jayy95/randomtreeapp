@@ -1,0 +1,87 @@
+.container form,
+.container form div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#rename {
+  padding-left: 50px;
+}
+
+.container button {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+  border : 1px solid #CCC;
+  margin-right: 50%;
+  width : 400px;
+
+}
+
+.custom-menu {
+  padding: 0;
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background: #FFF;
+  color: #333;
+  border-radius: 5px;
+}
+
+.custom-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.custom-menu li:hover {
+  background-color: #DEF;
+}
+
+.range {
+  float : right;
+  margin-right : 10%;
+  width : 100px;
+  display : inline-block;
+  vertical-align : top;
+}

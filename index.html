@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="tree.js"></script>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <title>Random Tree</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="newFactory">
+        Factory Name:<br>
+        <input type="text" name="factoryName" id="factoryName"><br>
+        Number of Children:<br>
+        <input type="text" name="numOfChildren" id="numOfChildren"><br>
+        Lower Range:<br>
+        <input type="text" name="lNumRange" id="lNumRange"><br>
+        Upper Range:<br>
+        <input type="text" name="uNumRange" id="uNumRange"><br>
+        <input type="submit" id= "create" value="Create/Generate" title="Creates new factory or generates new values for an existing one.">
+      </form>
+
+      <form id="rename">
+        Current Name:<br>
+        <input type="text" name="currentName" id="currentName"><br>
+        New Name:<br>
+        <input type="text" name="newName" id="newName"><br>
+        <input type="submit" id="changeName" value="Change Name">
+      </form>
+    </div>
+    <br>
+    <ul id="myUL">
+      <li><span class="caret" id="root">Root</span>
+        <ul class="nested" id="factories">
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="custom-menu">
+      <li id="delete">delete</li>
+    </ul>
+  </body>
+</html>
